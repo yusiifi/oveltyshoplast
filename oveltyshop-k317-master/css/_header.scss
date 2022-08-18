@@ -1,0 +1,99 @@
+header{
+    .header-top{
+        background-color: $black;
+        color: $white;
+        .top-left{
+           i{
+            padding: 10px;
+            transition: 0.5s;
+            &:hover{
+                color: $gold;
+            }
+           }
+           
+        }
+
+        .top-right{
+            ul{
+                li{
+                    padding: 15px;
+                    border-right: 1px solid $white;
+                    &:last-child{
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.header-middle{
+    margin-top: 30px;
+
+
+    
+    .categories{
+        a{
+            background-color: #3CB371;
+            border: 1px solid #3CB371;
+            padding: 10px 35px;
+            font-size: 1.3em;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $white;
+        }
+    }
+}
+    .main-header{
+        margin: 25px 0;
+        border-top: 1px solid #eee;
+        .menu{
+            ul{
+                padding: 0;
+                margin: 0;
+                li{
+                    &.drop-li{
+                        position: relative;
+                        &:hover{
+                            .drop-ul{
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                        .drop-ul{
+                            position: absolute;
+                            background-color: $black;
+                            width: 200px;
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: .3s;
+                            li{
+                                a{
+                                    color: #fff;
+                                    padding: 8px;
+                                }
+                            }
+                        }
+                    }
+                    a{
+                        padding: 15px;
+                        display: block;
+                        color: $black;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .header-tel{
+            background-color: #3CB371;
+            a{
+                padding: 20px 60px;
+                display: block;
+                color: $white;
+                font-size: 20px;
+            }
+        }
+    }
+
